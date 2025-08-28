@@ -1,0 +1,65 @@
+.mobile {
+  display: flex;
+  width: 390px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.navglobal {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  backdrop-filter: blur(10px);
+}
+.overlay {
+  width: 390px;
+  height: 48px;
+  background: rgba(245, 245, 247, 0.8);
+}
+.itemapple {
+  display: flex;
+  width: 49px;
+  height: 48px;
+  padding: 0 15px 0 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.applesize {
+  width: 18px;
+  height: 48px;
+  flex-shrink: 0;
+  width: 16px;
+  height: 19px;
+  flex-shrink: 0;
+}
+.item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 0 15.5px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.bag {
+  width: 17px;
+  height: 48px;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+  flex-shrink: 0;
+  width: 15.115px;
+  height: 17.6px;
+  flex-shrink: 0;
+  fill: rgba(0, 0, 0, 0.8);
+}
