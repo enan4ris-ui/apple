@@ -1,65 +1,206 @@
-.mobile {
-  display: flex;
-  width: 390px;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
+* {
+  margin: 0;
 }
-.navglobal {
+.flex-center {
   display: flex;
+  align-items: center;
+}
+.nav {
+  justify-content: space-between;
+}
+
+.icon-box {
+  width: 48px;
   height: 48px;
+  justify-content: center;
+}
+.nav-text {
+  justify-content: center;
+  text-align: center;
+  padding: 18px 31px 18px 31px;
+}
+
+.container {
+  display: flex;
+  height: 73px;
+  padding: 18px 31px;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  backdrop-filter: blur(10px);
+  background: #fff;
 }
-.overlay {
+.font {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  font-family: Inter;
+}
+.conttext {
+  display: flex;
+  width: 328px;
+  height: 37px;
+  flex-direction: column;
+  justify-content: center;
+  color: #1d1d1f;
+}
+.section {
+  display: flex;
+  padding-bottom: 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-bottom: 12px solid #fff;
+}
+.figure1 {
+  width: 734px;
+  height: 500px;
+  flex-shrink: 0;
+  display: flex;
+  padding-bottom: 22px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-bottom: 12px solid #fff;
+}
+.link {
+  background-image: url(/Figure@2x.png);
+  background-size: cover;
   width: 390px;
-  height: 48px;
-  background: rgba(245, 245, 247, 0.8);
+  height: 500px;
+  flex-shrink: 0;
 }
-.itemapple {
+.frame24 {
   display: flex;
-  width: 49px;
-  height: 48px;
-  padding: 0 15px 0 16px;
-  justify-content: center;
+  width: 241px;
+  height: 114px;
+  flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
+  gap: 16px;
+  padding-top: 350px;
+  padding-left: 75px;
 }
-.applesize {
-  width: 18px;
-  height: 48px;
-  flex-shrink: 0;
-  width: 16px;
-  height: 19px;
-  flex-shrink: 0;
-}
-.item {
+.frame244 {
   display: flex;
-  width: 48px;
-  height: 48px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
+  gap: 4px;
+  align-self: stretch;
+}
+.titlef {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+}
+.title2 {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
 }
 .button {
   display: flex;
-  width: 48px;
-  height: 48px;
-  padding: 0 15.5px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  gap: 12px;
+  align-self: stretch;
 }
-.bag {
-  width: 17px;
-  height: 48px;
-  padding-left: 15.5px;
-  padding-right: 15.5px;
-  flex-shrink: 0;
-  width: 15.115px;
-  height: 17.6px;
-  flex-shrink: 0;
-  fill: rgba(0, 0, 0, 0.8);
+.learnmore {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  background: #0071e3;
+}
+.learnmoree {
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid #2997ff;
+}
+.fontts {
+  color: #fff;
+}
+.fonttts {
+  padding: 8px 20px;
+  color: #2997ff;
+}
+.background2 {
+  width: 734px;
+  height: 500px;
+  background-image: url(/Figure.png);
+}
+.lmbox {
+  border-radius: 999px;
+  background: #fff;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+.buybutton {
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.spacingpage2 {
+  display: flex;
+  border-top: 36px;
+  border-right: 75px;
+  border-left: 75px;
+}
+.frame4 {
+  display: flex;
+  width: 241px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.ffont {
+  color: #f5f5f7;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.fffonts {
+  color: #f5f5f7;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.both {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+}
+.lmcolor {
+  border-radius: 999px;
+  background: #fff;
+}
+.bcolor {
+  border-radius: 999px;
+  border: 1px solid #fff;
 }
