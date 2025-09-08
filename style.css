@@ -306,7 +306,29 @@
   color: #000;
   width: 100%;
 }
-
+.desktopapple {
+  width: 405px;
+  height: 164px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.headersec {
+  font-family: Inter;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.gmfont {
+  font-family: Inter;
+  font-weight: 600;
+  align-self: center;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+}
 /* Background 4 */
 
 .background4 {
@@ -603,6 +625,7 @@
 /* Scroll */
 
 .fullsize {
+  display: block !important;
   width: 390px;
   height: 533px;
 }
@@ -622,6 +645,10 @@
   height: 8px;
 }
 
+.desktopscrbottom {
+  width: 100vw;
+  overflow: scroll;
+}
 /* Section 10 */
 
 .section10 {
@@ -656,6 +683,9 @@
 .fullsize {
   display: none;
 }
+.tabscroll {
+  display: none;
+}
 
 .imagesize {
   display: flex;
@@ -669,25 +699,120 @@
     rgba(0, 0, 0, 0) 50%
   );
 }
+
+.padbottom {
+  display: none;
+  width: 768px;
+  height: 262px;
+  opacity: 1;
+  padding-bottom: 28px;
+  gap: 16px;
+}
+.padbox1 {
+  width: 286px;
+  height: 161px;
+  background: rgba(101, 41, 207, 1);
+}
+.padbox2 {
+  width: 286px;
+  height: 161px;
+  background: rgba(42, 64, 45, 1);
+}
+.padbox3 {
+  width: 286px;
+  height: 161px;
+  background: rgba(4, 3, 3, 1);
+}
+.nav2 {
+  display: none;
+}
+/*Desktop*/
+.desktopscroll {
+  display: none;
+}
+.desktopscrbotsize {
+  width: 417px;
+  height: 236px;
+}
 /* --------- */
-@media (min-width: 768px) {
+@media (max-width: 700px) and (max-width: 769px) {
+  .desktopscrbottom {
+    display: none;
+  }
+  .ground4 {
+    display: none;
+  }
+  .ground5 {
+    display: none;
+  }
+  .ground6 {
+    display: none;
+  }
+  .ground7 {
+    display: none;
+  }
+  .ground8 {
+    display: none;
+  }
+  .ground9 {
+    display: none;
+  }
+  .desktopapple {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .scroll-container,
+  .ground4,
+  .ground5,
+  .ground6,
+  .ground7,
+  .ground8,
+  .ground9 {
+    display: none;
+  }
   .figuree1 {
     background-image: url(/sec1.jpg);
     background-size: cover;
+    background-position: center;
+    height: 692px;
   }
   .background2 {
     background-image: url(/iphone16horiz.png);
     background-size: cover;
+    background-position: center;
+    height: 692px;
   }
   .background3 {
     background-image: url(/ipadtab.png);
     background-size: cover;
+    background-position: center;
+    height: 692px;
   }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .section10 {
+    display: none !important;
+  }
   .tabscroll {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .padbottom {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .desktopapple {
+    display: none !important;
+  }
+  .desktopscrbottom {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
@@ -697,10 +822,141 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+  .background1 {
+    background-image: url(/ip16prodesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .background2 {
+    background-image: url(/iphone16desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .background3 {
     grid-column: 1 / span 2;
   }
-}
-@media (min-width: 768px) {
+  .nav2 {
+    display: flex !important;
+    flex-direction: row;
+    gap: 24px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -0.28px;
+    justify-content: center;
+  }
+  .nav {
+    display: none;
+  }
+  .tabscroll {
+    display: none;
+  }
+  .tablist {
+    display: none;
+  }
+  .grid4 {
+    display: flex;
+  }
+  .background4 {
+    display: none;
+  }
+  .background5 {
+    display: none;
+  }
+  .background6 {
+    display: none;
+  }
+  .background7 {
+    display: none;
+  }
+  .background8 {
+    display: none;
+  }
+  .background9 {
+    display: none;
+  }
+  .scroll-container {
+    display: none;
+  }
+  .tabscroll {
+    display: none;
+  }
+  .padbottom {
+    display: none !important;
+  }
+  .pic1 {
+    display: none;
+  }
+  .scroll {
+    display: none;
+  }
+  .frame231 {
+    display: none !important;
+  }
+  .desktopapple {
+    display: flex !important;
+  }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .ground4 {
+    background-image: url(ipadtab.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .ground5 {
+    background-image: url(airprodesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .ground6 {
+    background-image: url(watchdesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .ground7 {
+    background-image: url(macairdesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .ground8 {
+    background-image: url(tradeindesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .ground9 {
+    background-image: url(carddesktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+  }
+  .desktopscroll {
+    display: flex !important;
+    flex-direction: row;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .desktopscrbottom {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
 }
